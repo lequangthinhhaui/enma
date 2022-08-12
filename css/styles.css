@@ -1,0 +1,354 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+a:focus, a:hover {
+	text-decoration: none !important;
+}
+li {
+	list-style: none;
+}
+body {
+	font-family: "Roboto" !important;
+	color: black !important;
+}
+
+/** Common **/
+h2 {
+	text-align: center;
+	font-size: 45px !important;
+	margin-top: 0px !important;
+	margin-bottom: 75px !important;
+	color: black !important;
+}
+
+/** navbar **/
+#navbar {
+	position: absolute;
+	z-index: 1000;
+	top: 0px;
+	width: 100%;
+	background-color: rgba(0,0,0,0) !important;
+}
+#navbar ul {
+	margin-bottom: 0;
+	padding: 0;
+}
+#navbar ul li {
+	display: inline-block;
+	height: 65px;
+	line-height: 65px;
+	font-size: 16px;
+}
+
+#navbar a {
+	color: white;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 20px;
+    border-radius: 4px;
+}
+
+#navbar a:hover {
+	background-color: white;
+	color: #007078;
+}
+
+#navbar h1 {
+	margin: 0;
+	height: 65px;
+	line-height: 65px;
+	font-size: 30px;
+}
+
+/** Profile section **/
+#profile {
+	min-height: 660px;
+	background: #097f90 url('../images/header-bg.png') no-repeat center bottom;
+    background-size: cover;
+    padding-top: 215px;
+}
+
+#profile h1 {
+	color: white;
+	font-size: 37px;
+	margin-top: 0px;
+    margin-bottom: 5px;
+}
+#profile #jobtitle {
+	text-align: left;
+    color: white;
+    margin-top: 0px;
+    font-size: 22px;
+}
+#profile p {
+	color: white;
+    font-size: 17px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+#profile-links {
+	padding: 0;
+}
+#profile-links li {
+	display: inline-block;
+    margin-right: 13px;
+}
+#profile-links li a {
+	display: inline-block;
+}
+#profile-links li a img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+#profile-links li a:hover img {
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+#hire-me-btn {
+	background-color: #fdfdfd;
+	color: #4c4c4c;
+	height: 54px;
+	border: none;
+	padding: 0px 45px;
+	font-size: 20px;
+	vertical-align: middle;
+	box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+	border-radius: 27px;
+}
+#hire-me-btn:hover {
+	background-color: #f5f5f5;
+    	color: #151515;
+}
+
+/** about section **/
+#about {
+	padding: 75px 0px;
+}
+#about li {
+	outline: none;
+}
+#about p {
+	font-size: 20px;
+	line-height: 35px;
+	text-align: center;
+}
+#about .slider-prev, #about .slider-next {
+	max-width: 100%;
+	cursor: pointer;
+}
+
+/** everywhere section **/
+#everywhere {
+	background-color: #eeeeee;
+	padding: 75px 0px;
+}
+#everywhere ul {
+    padding: 0;
+}
+#everywhere ul li {
+	margin-bottom: 25px;
+}
+#everywhere ul li a {
+	display: inline-block;
+    background-color: #2b2b2b;
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    font-size: 20px;
+}
+#everywhere ul li a:hover {
+	background-color: #1c1c1c;
+}
+
+
+/** what-i-do section **/
+#what-i-do {
+	padding: 75px 0px;
+}
+#what-i-do {
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+#what-i-do .row:not(:last-child) {
+	margin-bottom: 55px;
+    padding-bottom: 55px;
+	border-bottom: 1px solid #d4d4d4;
+}
+#what-i-do h3 {
+	font-size: 40px;
+}
+#what-i-do p {
+	font-size: 20px;
+	margin-top: 30px;
+	line-height: 35px;
+}
+#what-i-do img {
+	max-width: 100%;
+}
+
+
+/** images section **/
+#images {
+	padding: 75px 0px;
+	background-color: #097f8f;
+}
+#images h2 {
+	color: white !important;
+	margin-bottom: 20px !important;
+}
+#images h3 {
+	color: white !important;
+	text-align: center;
+	margin-bottom: 60px;
+}
+#images h3 a {
+	background-color: white;
+    color: #097f8f;
+    border-radius: 3px;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#images ul {
+	padding: 0;
+}
+#images ul li {
+	padding-bottom: 30px;
+}
+#images ul li a img {
+	max-width: 100%;
+}
+
+/** contact section **/
+#contact {
+	padding: 75px 0px;
+}
+
+#contact ul li {
+	padding: 10px 0px;
+	font-size: 20px;
+}
+#contact ul li img {
+    margin-right: 10px;
+    display: inline-block;
+}
+#contact a {
+	color: black;
+}
+#contact a:hover {
+	color: black;
+	text-decoration: underline !important;
+}
+#contact #map {
+	max-width: 100%;
+}
+
+/** footer section **/
+#footer {
+	background-color: #2b2b2b;
+	color: white;
+	padding: 75px 0px;
+}
+#footer h4 {
+	font-size: 24px;
+	border-bottom: 1px solid #606060;
+	padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+#footer ul {
+	padding: 0px;
+}
+#footer ul li {
+	padding: 5px 0px;
+}
+#footer a {
+	color: white;
+	font-size: 16px;
+}
+#footer a:hover {
+	text-decoration: underline !important;
+}
+
+@media screen and (max-width: 970px){
+	h2 {
+	    font-size: 35px !important;
+	    margin-bottom: 20px !important;
+	}
+
+	#avatar {
+		display: block;
+		margin: 0px auto;
+	}
+	#profile .container {
+	    margin-top: 120px;
+	}
+	#profile h1, #profile #jobtitle, #profile p, #profile-links {
+		text-align: center;
+	}
+	#about, #everywhere {
+	    padding: 45px 0px;
+	}
+	#everywhere ul li a {
+        font-size: 16px;
+	}
+}
+@media screen and (max-width: 768px){
+	#navbar h1, #navbar ul {
+		float: none !important;
+		text-align: center;
+	}
+	#navbar h1 {
+		height: 50px;
+    	line-height: 50px;
+	}
+	#navbar ul li {
+	    height: 45px;
+	    line-height: 45px;
+	}
+	#avatar {
+		margin-bottom: 15px;
+	}
+	#hire-me-btn {
+		padding: 0px 20px;
+	}
+	#everywhere ul li a {
+	    height: 65px;
+	    line-height: 65px;
+        font-size: 16px;
+	}
+	#what-i-do {
+	    padding-top: 75px;
+	    padding-bottom: 75px;
+	}
+	#what-i-do {
+	    padding-top: 15px;
+	    padding-bottom: 15px;
+	}
+	#what-i-do h3 {
+	    font-size: 40px;
+	    text-align: center;
+	}
+	#what-i-do img {
+	    max-width: 100%;
+	    display: block;
+	    margin: 0px auto;
+        float: none !important;
+	}
+}
+@media screen and (max-width: 500px){
+	#navbar h1 {
+		height: 40px;
+    	line-height: 40px;
+	}
+	#navbar ul li {
+	    height: 30px;
+	    line-height: 30px;
+	}
+	#navbar a {
+		padding: 0px 10px;
+	}
+}
