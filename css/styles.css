@@ -51,8 +51,8 @@ h2 {
 }
 
 #navbar a:hover {
-	background-color: white;
-	color: #007078;
+	background-color: #24890d;
+	/* color: #24890d; */
 }
 
 #navbar h1 {
@@ -64,10 +64,10 @@ h2 {
 
 /** Profile section **/
 #profile {
-	min-height: 660px;
-	background: #097f90 url('../images/header-bg.png') no-repeat center bottom;
+	min-height: 650px;
+	background: black url('/images/hardware-design.jpg') no-repeat center bottom;
     background-size: cover;
-    padding-top: 215px;
+    padding-top: 150px;
 }
 
 #profile h1 {
@@ -99,6 +99,9 @@ h2 {
 	display: inline-block;
 }
 #profile-links li a img {
+	width: 50px;
+	height: 50px;
+
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 }
@@ -194,20 +197,20 @@ h2 {
 /** images section **/
 #images {
 	padding: 75px 0px;
-	background-color: #097f8f;
+	background-color: #eeeeee;
 }
 #images h2 {
-	color: white !important;
+	color: black !important;
 	margin-bottom: 20px !important;
 }
 #images h3 {
-	color: white !important;
+	color: black !important;
 	text-align: center;
 	margin-bottom: 60px;
 }
 #images h3 a {
-	background-color: white;
-    color: #097f8f;
+	background-color: black;
+    color: white;
     border-radius: 3px;
     display: inline-block;
     padding-left: 5px;
@@ -232,9 +235,14 @@ h2 {
 	padding: 10px 0px;
 	font-size: 20px;
 }
-#contact ul li img {
+#contact ul li img{
     margin-right: 10px;
     display: inline-block;
+}
+#contact iframe {
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 #contact a {
 	color: black;
@@ -340,6 +348,10 @@ h2 {
 	}
 }
 @media screen and (max-width: 500px){
+
+	#navbar span{
+		display: none;
+	}
 	#navbar h1 {
 		height: 40px;
     	line-height: 40px;
@@ -350,5 +362,14 @@ h2 {
 	}
 	#navbar a {
 		padding: 0px 10px;
+	}
+	#profile {
+		min-height: 500px;
+		padding-top: 30px;
+	}
+	#profile-links
+	{
+		display: flex;
+		justify-content: center;
 	}
 }
