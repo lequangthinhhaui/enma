@@ -372,4 +372,9 @@ h2 {
 		display: flex;
 		justify-content: center;
 	}
+
+	#profile-links button
+	{
+		display: none;
+	}
 }
