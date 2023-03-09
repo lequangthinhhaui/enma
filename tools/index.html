@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tool for create english exam</h1>
+    <h2>Input English paragraph</h2>
+    <form action="#" >
+        <textarea rows="10"
+                  cols="80"
+                  id="form_origin"></textarea>
+    </form>
+
+    <button type="button" onclick="myFunction()">Execute</button>
+    <div id="text_result">
+    </div>
+  
+</body>
+
+<script>
+const form_origin = document.getElementById("form_origin");
+function myFunction() 
+{
+    const form_origin = document.getElementById("form_origin").value;
+    console.log(form_origin)
+    let text_2= form_origin.trim().split(" ");
+    for(var i = 10;i>=0;i--)
+    {
+        var random_number = Math.floor(Math.random()*text_2.length)
+        text_2[random_number] = "__________"
+    }
+      const text_result = document.getElementById("text_result");
+      text_result.innerHTML = text_2.join(" ");
+}
+</script>
+
+</html>
