@@ -28,13 +28,13 @@ function myFunction()
     const form_origin = document.getElementById("form_origin").value;
     console.log(form_origin)
     let text_2= form_origin.trim().split(" ");
-    for(var i = 20;i>=0;i--)
+    for(var i = Math.round(text_2.length*0.15);i>=0;i--)
     {
         var random_number = Math.floor(Math.random()*text_2.length)
         text_2[random_number] = "__________"
     }
-      const text_result = document.getElementById("text_result");
-      text_result.innerHTML = text_2.join(" ");
+    const text_result = document.getElementById("text_result");
+    text_result.innerHTML = text_2.join(" ");
 }
 </script>
 
