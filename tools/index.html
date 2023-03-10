@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tool for create english exam</title>
+    <title>Tool for creating English exam</title>
 </head>
 <body>
-    <h1>Tool for create english exam</h1>
+    <h1>Tool for creating English exam</h1>
     <h2>Input English paragraph</h2>
     <form action="#" >
         <textarea rows="10"
@@ -26,8 +26,7 @@ const form_origin = document.getElementById("form_origin");
 function myFunction() 
 {
     const form_origin = document.getElementById("form_origin").value;
-    console.log(form_origin)
-    let text_2= form_origin.trim().split(" ");
+    var text_2= form_origin.trim().split(" ");
     for(var i = Math.round(text_2.length*0.15);i>=0;i--)
     {
         var random_number = Math.floor(Math.random()*text_2.length)
